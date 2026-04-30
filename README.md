@@ -29,6 +29,16 @@ Um sistema ERP moderno e completo, construído com **Java 21 + Spring Boot** no 
 ## 🏗️ Arquitetura
 
 ### Backend
+
+**Stack:**
+- Java 21
+- Spring Boot 3.3.0
+- Spring Security + JWT
+- Spring Data JPA
+- H2 (dev) / PostgreSQL (prod)
+- OpenAPI/Swagger
+
+**Estrutura:**
 ```
 backend/
 ├── src/main/java/com/erp/
@@ -43,15 +53,20 @@ backend/
 └── pom.xml             # Dependências Maven
 ```
 
-**Stack:**
-- Java 21
-- Spring Boot 3.3.0
-- Spring Security + JWT
-- Spring Data JPA
-- H2 (dev) / PostgreSQL (prod)
-- OpenAPI/Swagger
-
 ### Frontend
+
+**Stack:**
+- React 18+
+- Vite 5
+- TypeScript
+- Tailwind CSS
+- React Router v6
+- TanStack Query (React Query)
+- React Hook Form + Zod
+- Zustand
+- Axios
+
+**Estrutura:**
 ```
 frontend/
 ├── src/
@@ -66,17 +81,6 @@ frontend/
 │   └── lib/            # Utilidades
 └── package.json        # Dependências npm
 ```
-
-**Stack:**
-- React 18+
-- Vite 5
-- TypeScript
-- Tailwind CSS
-- React Router v6
-- TanStack Query (React Query)
-- React Hook Form + Zod
-- Zustand
-- Axios
 
 ## 🚀 Como Executar
 
@@ -106,6 +110,7 @@ http://localhost:8080/swagger-ui.html
 ```
 
 #### 4. Dados de demonstração
+
 O banco H2 é criado automaticamente com usuários de teste:
 
 **Admin:**
@@ -115,8 +120,6 @@ O banco H2 é criado automaticamente com usuários de teste:
 **User:**
 - Email: `user@erp.com`
 - Senha: `user123`
-
----
 
 ### Frontend
 
@@ -142,8 +145,6 @@ O frontend estará disponível em: **http://localhost:5173**
 npm run build
 npm run preview
 ```
-
----
 
 ## 📖 Guia de Uso
 
@@ -173,8 +174,6 @@ npm run preview
 - Clique no botão "Logout" na navbar
 - Será redirecionado para login
 
----
-
 ## 🔐 Segurança
 
 ### Backend
@@ -192,8 +191,6 @@ npm run preview
 - ✅ Logout ao receber 401
 - ✅ Validação Zod no frontend
 - ✅ Rotas privadas protegidas
-
----
 
 ## 🔄 Fluxo de Requisições
 
@@ -215,8 +212,6 @@ JSON Response
 Frontend (Armazena + Exibe)
 ```
 
----
-
 ## 📝 API Endpoints
 
 ### Autenticação
@@ -236,11 +231,10 @@ Frontend (Armazena + Exibe)
 - `PUT /api/users/{id}` - Atualizar usuário (ADMIN)
 - `DELETE /api/users/{id}` - Deletar usuário (ADMIN)
 
----
-
 ## 🛠️ Configuração de Ambiente
 
 ### Backend
+
 **application.properties** (desenvolvimento):
 ```properties
 server.port=8080
@@ -258,14 +252,13 @@ spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL10Dialect
 ```
 
 ### Frontend
+
 Crie um `.env.local`:
 ```
 VITE_API_BASE_URL=http://localhost:8080/api
 ```
 
----
-
-## 📦 Estrutura de Pastas
+## 📦 Estrutura de Pastas Raiz
 
 ```
 ERP/
@@ -282,17 +275,13 @@ ERP/
 └── README.md
 ```
 
----
-
 ## 🎨 UI/UX
 
-- **Design**: Clean, moderno, estilo SaaS
-- **Responsivo**: Mobile-first com Tailwind CSS
-- **Componentes**: ShadCN + Tailwind CSS
-- **Ícones**: Lucide React
-- **Temas**: Light mode padrão (pronto para dark mode)
-
----
+- **Design:** Clean, moderno, estilo SaaS
+- **Responsivo:** Mobile-first com Tailwind CSS
+- **Componentes:** ShadCN + Tailwind CSS
+- **Ícones:** Lucide React
+- **Temas:** Light mode padrão (pronto para dark mode)
 
 ## 🚧 Próximas Funcionalidades
 
@@ -305,15 +294,11 @@ ERP/
 - [ ] Docker e Docker Compose
 - [ ] CI/CD pipeline (GitHub Actions)
 
----
-
 ## 📚 Documentação
 
-- **Swagger/OpenAPI**: `http://localhost:8080/swagger-ui.html`
-- **H2 Console**: `http://localhost:8080/h2-console`
-- **Frontend**: `http://localhost:5173`
-
----
+- **Swagger/OpenAPI:** `http://localhost:8080/swagger-ui.html`
+- **H2 Console:** `http://localhost:8080/h2-console`
+- **Frontend:** `http://localhost:5173`
 
 ## 🤝 Contribuindo
 
@@ -324,13 +309,9 @@ Este é um projeto base. Sinta-se livre para:
 - Adicionar testes
 - Corrigir bugs
 
----
-
 ## 📄 Licença
 
 MIT License - Sinta-se livre para usar este projeto como base para seus próprios projetos.
-
----
 
 ## 💡 Dicas de Desenvolvimento
 
@@ -350,15 +331,11 @@ Simplesmente reinicie o backend (H2 em memória é recriado)
 - Localstorage contém o token
 - Network tab mostra requisições
 
----
-
 ## ⚡ Performance
 
-- **Frontend**: Vite + React Query com cache automático
-- **Backend**: Spring Data JPA com lazy loading
-- **Database**: H2 em memória ou PostgreSQL em produção
-
----
+- **Frontend:** Vite + React Query com cache automático
+- **Backend:** Spring Data JPA com lazy loading
+- **Database:** H2 em memória ou PostgreSQL em produção
 
 ## 🐛 Troubleshooting
 
@@ -386,5 +363,3 @@ kill -9 <PID>
 ---
 
 **Projeto criado com ❤️ usando boas práticas de desenvolvimento**
-#   E R P - K S C - B R A S I L  
- 
