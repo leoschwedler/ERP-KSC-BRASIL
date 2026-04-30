@@ -1,0 +1,51 @@
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-04-30T13:28:16.430-03:00  INFO 3900 --- [           main] com.erp.Application                      : Starting Application v1.0.0 using Java 21.0.9 with PID 3900 (C:\Users\dev1\Desktop\ERP\backend\target\erp-system-1.0.0.jar started by dev1 in C:\Users\dev1\Desktop\ERP)
+2026-04-30T13:28:16.433-03:00  INFO 3900 --- [           main] com.erp.Application                      : No active profile set, falling back to 1 default profile: "default"
+2026-04-30T13:28:18.463-03:00  INFO 3900 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-30T13:28:18.573-03:00  INFO 3900 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2026-04-30T13:28:19.701-03:00  INFO 3900 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-30T13:28:19.716-03:00  INFO 3900 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-30T13:28:19.716-03:00  INFO 3900 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-04-30T13:28:19.779-03:00  INFO 3900 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-04-30T13:28:19.794-03:00  INFO 3900 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3203 ms
+2026-04-30T13:28:20.178-03:00  INFO 3900 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-30T13:28:20.428-03:00  INFO 3900 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-04-30T13:28:20.513-03:00  INFO 3900 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-30T13:28:21.092-03:00  INFO 3900 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-30T13:28:21.138-03:00  INFO 3900 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-30T13:28:21.835-03:00  INFO 3900 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4392362c
+2026-04-30T13:28:21.839-03:00  INFO 3900 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-30T13:28:21.934-03:00  WARN 3900 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-30T13:28:21.937-03:00  WARN 3900 --- [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-04-30T13:28:23.388-03:00  INFO 3900 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-30T13:28:23.486-03:00  INFO 3900 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-30T13:28:24.335-03:00  WARN 3900 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-30T13:28:25.537-03:00  INFO 3900 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2026-04-30T13:28:25.568-03:00  INFO 3900 --- [           main] com.erp.Application                      : Started Application in 9.93 seconds (process running for 11.075)
+2026-04-30T13:28:26.104-03:00  INFO 3900 --- [           main] com.erp.config.DataInitializer           : Initializing database with test users...
+2026-04-30T13:28:26.411-03:00  INFO 3900 --- [           main] com.erp.config.DataInitializer           : Test users created: admin@erp.com (admin123) and user@erp.com (user123)
+2026-04-30T13:28:26.411-03:00  INFO 3900 --- [           main] com.erp.config.DataInitializer           : Initializing database with test products...
+2026-04-30T13:28:26.442-03:00  INFO 3900 --- [           main] com.erp.config.DataInitializer           : Test products created
+2026-04-30T13:28:44.480-03:00  INFO 3900 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-30T13:28:44.481-03:00  INFO 3900 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-30T13:28:44.482-03:00  INFO 3900 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-30T13:28:44.730-03:00  INFO 3900 --- [nio-8080-exec-2] c.erp.config.CustomUserDetailsService    : Loading user by email: admin@erp.com
+2026-04-30T13:28:44.786-03:00  INFO 3900 --- [nio-8080-exec-2] c.erp.config.CustomUserDetailsService    : User found: admin@erp.com with role: ADMIN
+2026-04-30T13:28:47.678-03:00  INFO 3900 --- [nio-8080-exec-3] c.erp.config.CustomUserDetailsService    : Loading user by email: user@erp.com
+2026-04-30T13:28:47.681-03:00  INFO 3900 --- [nio-8080-exec-3] c.erp.config.CustomUserDetailsService    : User found: user@erp.com with role: USER
+2026-04-30T13:29:06.059-03:00  INFO 3900 --- [nio-8080-exec-6] c.erp.config.CustomUserDetailsService    : Loading user by email: admin@erp.com
+2026-04-30T13:29:06.059-03:00  INFO 3900 --- [nio-8080-exec-6] c.erp.config.CustomUserDetailsService    : User found: admin@erp.com with role: ADMIN
+2026-04-30T13:29:18.673-03:00  INFO 3900 --- [nio-8080-exec-8] c.erp.config.CustomUserDetailsService    : Loading user by email: user@erp.com
+2026-04-30T13:29:18.676-03:00  INFO 3900 --- [nio-8080-exec-8] c.erp.config.CustomUserDetailsService    : User found: user@erp.com with role: USER
+2026-04-30T13:29:22.745-03:00  INFO 3900 --- [nio-8080-exec-4] c.erp.config.CustomUserDetailsService    : Loading user by email: developerschwedler@gmail.com
+2026-04-30T13:29:22.745-03:00 ERROR 3900 --- [nio-8080-exec-4] c.erp.config.CustomUserDetailsService    : User not found with email: developerschwedler@gmail.com
+2026-04-30T13:29:39.200-03:00  INFO 3900 --- [nio-8080-exec-3] c.erp.config.CustomUserDetailsService    : Loading user by email: admin@erp.com
+2026-04-30T13:29:39.203-03:00  INFO 3900 --- [nio-8080-exec-3] c.erp.config.CustomUserDetailsService    : User found: admin@erp.com with role: ADMIN

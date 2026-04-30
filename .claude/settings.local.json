@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sc query *)",
+      "Bash(net start *)",
+      "Bash(netstat -ano)",
+      "Bash(mvn spring-boot:run)",
+      "Bash(/c/ProgramData/chocolatey/lib/maven/apache-maven-3.9.15/bin/mvn spring-boot:run)",
+      "Bash(export JAVA_HOME=\"/c/Program Files/Eclipse Adoptium/jdk-21.0.9.10-hotspot\")",
+      "Bash(/c/ProgramData/chocolatey/lib/maven/apache-maven-3.9.15/bin/mvn clean *)",
+      "Bash(curl -s http://localhost:8080/api/swagger-ui.html)",
+      "Bash(curl -s -X POST http://localhost:8080/api/auth/login -H 'Content-Type: application/json' -d '{\"email\":\"admin@erp.com\",\"password\":\"admin123\"}')",
+      "Bash(curl -s -X POST http://localhost:8080/api/auth/login -H 'Content-Type: application/json' -d '{\"email\":\"admin@erp.com\",\"password\":\"password\"}')",
+      "Bash(awk '{print $1}')",
+      "Bash(xargs kill *)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(tasklist /FI \"PID eq 9264\")",
+      "Bash(kill -9 9264)",
+      "Bash(cmd /c \"taskkill /PID 9264 /F\")",
+      "Bash(tee /tmp/backend2.log)",
+      "Read(//tmp/**)",
+      "Bash(export PATH=\"$JAVA_HOME/bin:$PATH\")",
+      "Bash(java -jar /c/Users/dev1/Desktop/ERP/backend/target/erp-system-1.0.0.jar)",
+      "Bash(echo \"Started with PID $!\")"
+    ]
+  }
+}
